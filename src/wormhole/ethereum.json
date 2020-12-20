@@ -1,0 +1,32 @@
+{
+  "mainnet": {
+    "uluna": {
+      "symbol": "Luna",
+      "info": { "native_token": { "denom": "uluna" } },
+      "contract": "0xbd31EA8212119f94A611FA969881CBa3EA06Fa3d"
+    },
+    "uusd": {
+      "symbol": "UST",
+      "info": { "native_token": { "denom": "uusd" } },
+      "contract": "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
+    },
+    "terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6": {
+      "symbol": "MIR",
+      "info": {
+        "token": {
+          "contract_addr": "terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6"
+        }
+      },
+      "contract": "0xB3c6cDB0a68a9dd3892408Fd4Fa4Bc4F0dB5EeEf"
+    },
+    "terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76": {
+      "symbol": "ANC",
+      "info": {
+        "token": {
+          "contract_addr": "terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76"
+        }
+      },
+      "contract": "0xcA6f84973D171527c5019Ef74607fe8af00826E6"
+    }
+  }
+}
