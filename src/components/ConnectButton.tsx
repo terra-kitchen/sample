@@ -1,5 +1,5 @@
 import { ConnectType, useWallet } from "@terra-money/wallet-provider"
-import { useAddress } from "../utils/hooks"
+import { useAddress } from "../hooks/useConnectedAddress"
 
 const ConnectButton = () => {
   const { connect, disconnect } = useWallet()

@@ -1,8 +1,8 @@
 import { useWallet } from "@terra-money/wallet-provider"
 import { Coin, Coins, MsgExecuteContract } from "@terra-money/terra.js"
-import { useConnectedAddress } from "../utils/hooks"
+import useConnectedAddress from "../hooks/useConnectedAddress"
 import { toToken } from "../utils/helpers"
-import { useGasPrice } from "../utils/useGasPrices"
+import { useGasPrice } from "../hooks/useGasPrices"
 
 const PAIR = "terra1cz6qp8lfwht83fh9xm9n94kj04qc35ulga5dl0" // MIR-UST for testnet
 

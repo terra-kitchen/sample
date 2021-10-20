@@ -1,4 +1,4 @@
-import { useAddress } from "../utils/hooks"
+import { useAddress } from "../hooks/useConnectedAddress"
 import SendButton from "./SendButton"
 import ConnectButton from "./ConnectButton"
 import ExecuteButton from "./ExecuteButton"

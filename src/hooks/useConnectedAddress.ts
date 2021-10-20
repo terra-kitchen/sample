@@ -5,10 +5,12 @@ export const useAddress = () => {
   return connected?.terraAddress
 }
 
-export const useConnectedAddress = () => {
+const useConnectedAddress = () => {
   const address = useAddress()
 
   if (!address) throw new Error("Not connected")
 
   return address
 }
+
+export default useConnectedAddress

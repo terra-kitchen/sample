@@ -1,7 +1,7 @@
 import { useWallet } from "@terra-money/wallet-provider"
 import { MsgSend } from "@terra-money/terra.js"
-import { useConnectedAddress } from "../utils/hooks"
-import { useGasPrice } from "../utils/useGasPrices"
+import useConnectedAddress from "../hooks/useConnectedAddress"
+import { useGasPrice } from "../hooks/useGasPrices"
 
 const SendButton = () => {
   const { post } = useWallet()
