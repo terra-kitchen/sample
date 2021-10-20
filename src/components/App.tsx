@@ -1,7 +1,9 @@
 import { useAddress } from "../hooks/useConnectedAddress"
-import SendButton from "./SendButton"
 import ConnectButton from "./ConnectButton"
-import ExecuteButton from "./ExecuteButton"
+import IBCTransferFromExternalChain from "./IBCTransferFromExternalChain"
+import IBCTransfer from "./IBCTransfer"
+import IBCSend from "./IBCSend"
+import Balances from "./Balances"
 
 const App = () => {
   const address = useAddress()
@@ -12,8 +14,10 @@ const App = () => {
 
       {address && (
         <section>
-          <SendButton />
-          <ExecuteButton />
+          <Balances />
+          <IBCTransferFromExternalChain />
+          <IBCTransfer />
+          <IBCSend />
         </section>
       )}
     </main>

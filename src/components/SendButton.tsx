@@ -19,7 +19,7 @@ const SendButton = () => {
   const sign = async () => {
     const response = await wallet.sign(txOptions)
     console.log(response.result)
-    const result = await lcd.tx.broadcast(response.result)
+    const result = await lcd.tx.broadcast(response.result as any)
     console.log(result)
   }
 
