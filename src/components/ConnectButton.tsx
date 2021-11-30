@@ -12,7 +12,7 @@ const ConnectButton = () => {
     </>
   ) : (
     <>
-      <button onClick={() => connect(ConnectType.CHROME_EXTENSION)}>
+      <button onClick={() => connect(ConnectType.EXTENSION)}>
         Connect extension
       </button>
       <button onClick={() => connect(ConnectType.WALLETCONNECT)}>
