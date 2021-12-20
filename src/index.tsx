@@ -2,7 +2,7 @@ import { StrictMode } from "react"
 import { render } from "react-dom"
 import { QueryClient, QueryClientProvider } from "react-query"
 import "./index.scss"
-import App from "./components/App"
+import App from "./App"
 
 const queryClient = new QueryClient()
 
