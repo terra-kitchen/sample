@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-import axios from "axios"
+import axios, { AxiosError } from "axios"
 import { AccAddress, MsgExecuteContract } from "@terra-money/terra.js"
 import { useWallet } from "@terra-money/wallet-provider"
 import { useConnectedAddress } from "data/wallet"
@@ -32,7 +32,7 @@ const ExecuteContract = () => {
       setTxHash(result.txhash)
     } catch (error) {
       const message = axios.isAxiosError(error)
-        ? error.response?.data.message
+        ? (error as AxiosError<any>).response?.data.message
         : (error as Error).message
 
       alert(message)
